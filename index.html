@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabricon Clothes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div id="brand">
+                <h1>FABRICON</h1>
+            </div>
+            <div id="hamburger" class="hamburger">
+                <i class="ri-menu-line"></i> <!-- Hamburger Icon -->
+            </div>
+            <div id="nav-links" class="nav-links">
+                <a href="#">Home</a>
+                <a href="About.html">About</a>
+                <a href="https://www.instagram.com/metrioenterprises/?hl=en" target="_blank">Shop</a>
+                <!-- <a href="#">Contact</a> -->
+            </div>
+            
+            <div id="nav-buttons">
+                <button>Login</button>
+                <button>Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2><span id="auto-type"></span></h2>
+        <p>Discover our exclusive collection of oversized T-shirts</p>
+        <button class="shop"><a href="https://www.instagram.com/metrioenterprises/?hl=en" target="_blank">Shop Now</a></button>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <div class="product-card" id="design">
+            <h3>Design Collection</h3>
+        </div>
+        <div class="product-card" id="tees">
+            <h3 id="mid-set">Tees Collection</h3>
+        </div>
+        <div class="product-card" id="color">
+            <h3>Colors Collection</h3>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta">
+        <h2>Create Your Own Custom Design!</h2>
+        <button class="shop"><a href="https://www.canva.com/" target="_blank">Get Started</a></button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61551349244731" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="https://www.instagram.com/metrioenterprises/?hl=en" target="_blank"><i class="ri-instagram-fill"></i></a>
+        </div>
+        <p>&copy; 2024 Fabricon Own by MetrioEnterprises. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#auto-type', {
+        strings: ["Your Wear, Our Passion"],
+        typeSpeed: 80,
+        backSpeed: 70,
+        loop: true
+    })
+</script>
+</html>

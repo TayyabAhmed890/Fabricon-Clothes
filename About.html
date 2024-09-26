@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .abt{
+            padding: 20px 20px;
+            flex-wrap: wrap;
+        }
+        h2{
+            font-family: "Outfit", sans-serif;
+            font-size: 40px;
+            font-weight: 20px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            text-align: justify;
+        }
+        .section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .d1{
+            border: 2px solid black;
+            text-align: center;
+            margin: 20px 10px;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.2s;
+        }
+        .d1:hover{
+            scale: 1.1;
+        }
+        img{
+            height: 80px;
+            filter: invert();
+            position: relative;
+            top: 35%;
+        }
+        #fab2>img{
+            height: 110px;
+            top: 32%;
+            left: 4%;
+        }
+        footer>p{
+        text-align: center;
+        padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abt">
+        <h2>About Us</h2>
+        <p>Fabricon Clothes is the Oversized Tees Shopping Brand Where you can Buy Oversized Custom Design Tees we Provide Best Quality Fabric with in Good and Affordable Prices because Your Wear is Our Passion Its Own by Metrio Enterprises</p>
+    </div>
+    <hr>
+    <section class="section">
+        <div class="d1"><img src="img/logo.png" alt=""></div>
+        <div class="d1" id="fab2"><img src="img/fabricon.png" alt=""></div>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2024 Fabricon Own by MetrioEnterprises. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
