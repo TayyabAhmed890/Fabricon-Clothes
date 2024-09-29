@@ -15,7 +15,8 @@
     <header>
         <nav id="navbar">
             <div id="brand">
-                <h1>FABRICON</h1>
+                <img src="img/fabricon.png" alt="">
+                <!-- <h1>FABRICON<br>Clothes</h1> -->
             </div>
             <div id="hamburger" class="hamburger">
                 <i class="ri-menu-line"></i> <!-- Hamburger Icon -->
@@ -53,6 +54,28 @@
             <h3>Colors Collection</h3>
         </div>
     </section>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="img/i1.jpg" alt="Image 1">
+                <div class="hover-text"><h2>Quality Printing</h2></div>
+            </div>
+            <div class="slide">
+                <img src="img/i2.jpg" alt="Image 2">
+                <div class="hover-text"><h2>Custom Designs</h2></div>
+            </div>
+            <div class="slide">
+                <img src="img/i3.jpg" alt="Image 3">
+                <div class="hover-text"><h2>Free Delivery</h2></div>
+            </div>
+            <div class="slide">
+                <img src="img/i4.jpg" alt="Image 4">
+                <div class="hover-text"><h2>Fashion Wear</h2></div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Call to Action Section -->
     <section id="cta">
@@ -79,4 +102,21 @@
         loop: true
     })
 </script>
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+    
+    function changeSlide() {
+      currentIndex++;
+      if (currentIndex >= slideCount) {
+        currentIndex = 0;
+      }
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    
+    // Auto change slides every 3 seconds
+    setInterval(changeSlide, 3000);
+    </script>
+    
 </html>

@@ -20,3 +20,4 @@ document.querySelector('#tees').addEventListener('click',function navigatePage2(
 document.querySelector('#color').addEventListener('click',function navigatePage3(){
     window.location.href = "color.html"
 })
+
